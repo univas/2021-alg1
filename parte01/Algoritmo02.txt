@@ -1,0 +1,14 @@
+programa {
+
+	funcao inicio () {
+	
+		inteiro idade
+		idade = 7
+		escreva(idade)
+		escreva("\n")
+		idade = 15
+		escreva(idade, "\n")
+		idade = 20
+		escreva(idade, "\n")
+	}
+}

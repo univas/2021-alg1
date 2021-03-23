@@ -1,0 +1,10 @@
+programa {
+
+	funcao inicio () {
+	
+		escreva("Olá mundo\n")
+		
+		escreva("Seja bem vindo\n")
+		escreva("à disciplina de ", "Algoritmos I")
+	}
+}

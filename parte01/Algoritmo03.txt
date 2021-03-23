@@ -1,0 +1,33 @@
+programa {
+
+	funcao inicio () {
+
+		inteiro valor1, valor2
+		real total, valor3
+
+		valor1 = 3
+		valor2 = 5
+		valor3 = 2.8
+		
+		total = valor1 + valor2
+		escreva("Total um: ", total)
+		
+		total = valor1 - valor2
+		escreva("\nTotal dois: ", total)
+		
+		total = valor1 * valor2
+		escreva("\nTotal três: ", total)
+		
+		total = valor1 / valor2 //divisão
+		escreve("\nTotal quatro: ", total)
+		
+		total = valor2 / valor3 //divisão
+		escreve("\nTotal quatro (real): ", total)
+		
+		total = valor1 % valor2 //mod (resto da divisão)
+		escreve("\nTotal quatro: ", total)
+		
+		total = valor2 % valor1 //mod
+		escreve("\nTotal quatro: ", total)
+	}
+}

@@ -1,0 +1,17 @@
+programa {
+	funcao inicio() {
+
+		inteiro idade
+		escreva("Digite o valor da idade: ")
+		//comando para ler um valor do teclado
+		//o valor digitado deve ser compatível com a variável
+
+		leia(idade) /* 1) fica esperando o usuário digitar um valor (inteiro)
+					2) Após digitar um valor, o usuário deve digitar <ENTER>
+					3) Após o <ENTER>, o comando 'leia' salva o valor digitado na variável
+					4) Encerra o comando 'leia'
+		*/
+
+		escreva("Você digitou o valor: ", idade)
+	}
+}

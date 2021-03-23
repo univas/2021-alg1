@@ -1,0 +1,15 @@
+programa {
+	funcao inicio() { //Exercício 01 da lista 01
+		real valor1, valor2
+		real media
+
+		escreva("Digite o 1o valor: ")
+		leia(valor1)
+		escreva("Digite o 2o valor: ")
+		leia(valor2)
+
+		media = (valor1 + valor2) / 2.0
+
+		escreva("A média é: ", media)
+	}
+}

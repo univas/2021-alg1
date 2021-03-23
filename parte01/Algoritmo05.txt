@@ -1,0 +1,40 @@
+programa
+ {
+	funcao inicio()
+ {
+		escreva("Iniciando o algoritmo de quem pode votar\n")
+		
+		inteiro idade
+
+		escreva("Digite o valor da idade: ")
+		leia(idade)
+		//se idade >= 16              ====> pode votar
+		//se a idade não for >= 16    ====> muito novo para votar
+
+/* Comentário 
+ * de várias linhas.
+ */
+ 
+/* Ou pode começar e terminar na mesma linha*/
+
+		se(idade >= 16) { //condição
+			//bloco executado quando a condição for verdadeira
+			escreva("A pessoa pode votar\n")
+		} senao {
+			//bloco executado quando a condição for falso
+			escreva("A pessoa é nova demais para votar\n")
+		}
+		logico ehMaior //aceita verdadeiro ou aceita falso
+
+		ehMaior = idade >= 18 //o parênteses é opçional
+		
+		//a condição deve ser um valor lógico
+		se(idade >= 18) {
+			escreva("É maior de idade\n")
+		} senao {
+			escreva("É menor de idade\n")
+		}
+
+		escreva("Finalizou o algoritmo de quem pode votar.\n")
+	}
+}

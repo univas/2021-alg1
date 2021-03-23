@@ -1,0 +1,33 @@
+programa {
+
+	funcao inicio () {
+	
+		//comentário: tudo que está depois do // (na mesma linha) é descartado
+		//ou seja, não é executado
+		
+		inteiro totalInt
+		real valor1 = 3.7, valor2 = 5.2
+		
+		real total = valor1 + valor2
+		totalInt = total
+		totalInt = valor1 + valor2
+		
+		escreva("Total um: ", total)
+		
+		total = valor1 - valor2 //subtração (sinal de menos)
+		escreva("\tTotal dois: ", total)
+		
+		total = valor1 * valor2
+		escreva("\tTotal três: ", total)
+		
+		total = valor1 / valor2 //divisão
+		escreve("\tTotal quatro: ", total)
+		
+		//Exercícios
+		//TODO: 1) testar com os resultados variável de resultado inteira
+		
+		//TODO: 2) testar as operações com um operando inteiro e outro real,
+		//... e guardar em uma variável real
+		//... na divisão, fazer um teste invertendo os operandos de lugar
+	}
+}
