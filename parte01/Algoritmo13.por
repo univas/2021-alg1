@@ -1,6 +1,6 @@
-programa{
-	funcao inicio(){
-		inteiro capacidadeDaCaixa, totalNaPrimeiraHora
+programa {
+	funcao inicio() { //exercício 06 da lista 01
+		inteiro capacidadeDaCaixa, totalNaPrimeiraHora = 22 * 60
 		inteiro quantidadeAposPrimeiraHora
 		real comsumoPorMinuto = 350.0/60.0
 		real taxaEnchimentoAposPrimeiraHora
@@ -8,34 +8,22 @@ programa{
 
 		leia(capacidadeDaCaixa)
 
-		se (capacidadeDaCaixa <= 1320) {
+		se (capacidadeDaCaixa <= totalNaPrimeiraHora) {//22 * 60
 			//cenário 1
 			tempoParaEncer = capacidadeDaCaixa / 22.0
 	
 			escreva("Tempo total para encher a caixa (cenário 1): ", tempoParaEncer, "\n")
 		} senao {
 			//cenário 2
-			//TODO: corrigir o cálculo do cenário 2
-			totalNaPrimeiraHora = 22 * 60
-	
 			quantidadeAposPrimeiraHora = capacidadeDaCaixa - totalNaPrimeiraHora
 	
 			taxaEnchimentoAposPrimeiraHora = 22 - comsumoPorMinuto
 			
-			tempoParaEncer = quantidadeAposPrimeiraHora / taxaEnchimentoAposPrimeiraHora
+			tempoParaEncer = quantidadeAposPrimeiraHora / taxaEnchimentoAposPrimeiraHora //apenas da parte restante
+
+			tempoParaEncer = tempoParaEncer + 60 //soma com a primeira parte (1a hora)
 	
 			escreva("Tempo total para encher a caixa (cenário 2): ", tempoParaEncer)
 		}
 	}
 }
-/* $$$ Portugol Studio $$$ 
- * 
- * Esta seção do arquivo guarda informações do Portugol Studio.
- * Você pode apagá-la se estiver utilizando outro editor.
- * 
- * @POSICAO-CURSOR = 489; 
- * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = ;
- * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
- * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
- */
