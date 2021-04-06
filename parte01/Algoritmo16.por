@@ -6,45 +6,40 @@ programa {
 		escreva("Digite a quantidade de kilowatts: ")
 		leia(quantidade)
 
+		escreva("Teste 0\n")
 		se (quantidade <= 70) {
 			//1a faixa
 			totalDaConta = quantidade * 0.14
+			escreva("Teste 1\n")
 		} senao { // a quantidade é maior que 70
-
 			//não está na 1a faixa
+			escreva("Teste 2\n")
 			se (quantidade <= 110) {
 				//2a faixa
 				totalDaConta = quantidade * 0.37
+				escreva("Teste 3\n")
 			} senao {
 				//não está na 1a e não está na 2a faixa
+				escreva("Teste 4\n")
 				se(quantidade <= 150) {
 					//3a faixa
 					totalDaConta = quantidade * 0.64
+					escreva("Teste 5\n")
 				} senao {
 					//não está na 1a e não está na 2a e não está na 3a faixa
+					escreva("Teste 6\n")
 					se(quantidade <= 230) {
 						//4a faixa
 						totalDaConta = quantidade * 0.87
+						escreva("Teste 7\n")
 					} senao {
 						//está na 5a faixa
 						totalDaConta = quantidade * 1.15
+						escreva("Teste 8\n")
 					}
 				}
 			}
-			escreva("Teste 1\n")
 		}
-		
 		escreva("O total da conta é: ", totalDaConta, "\n")
 	}
 }
-/* $$$ Portugol Studio $$$ 
- * 
- * Esta seção do arquivo guarda informações do Portugol Studio.
- * Você pode apagá-la se estiver utilizando outro editor.
- * 
- * @POSICAO-CURSOR = 813; 
- * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = ;
- * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
- * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
- */
