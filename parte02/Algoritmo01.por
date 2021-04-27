@@ -1,10 +1,11 @@
 programa {
 	funcao inicio() { //primeiro exemplo com estrutura de repetição: enquanto
 
-		//primeira forma de controlar um loop: usando variável de controle (incrementando)
+		//primeira estratégia de controlar um loop: usando variável de controle (contador) (incrementando)
 		//a variável de controle é iniciada com um valor
 		//a variável é modificada em direção ao valor da condição
 		//a condição pode usar valores fixos ou variáveis
+		//cuidado: a atualização do contador tem que caminhar em direção ao objetivo.
 
 		escreva("Iniciando o algoritmo usando enquanto.\n")
 
@@ -19,7 +20,8 @@ programa {
 		enquanto(contador <= maximo) {
 			//comandos da Ação 2
 			escreva("Executando dentro do enquanto. contador: ", contador, "\n")
-			contador = contador + 1 //incrementa/atualiza o valor do contador --->>> pode afetar a condição
+			//contador = contador + 1 //incrementa/atualiza o valor do contador --->>> pode afetar a condição
+			contador++ //só funciona de 1 em 1
 		}
 		//comandos da Ação 3
 		escreva("Executando depois do enquanto.\n")
@@ -30,9 +32,9 @@ programa {
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 551; 
- * @PONTOS-DE-PARADA = 9;
- * @SIMBOLOS-INSPECIONADOS = {contador, 11, 10, 8}-{maximo, 12, 10, 6};
+ * @POSICAO-CURSOR = 509; 
+ * @PONTOS-DE-PARADA = ;
+ * @SIMBOLOS-INSPECIONADOS = {contador, 12, 10, 8}-{maximo, 13, 10, 6};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */
