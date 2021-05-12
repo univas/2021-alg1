@@ -46,3 +46,15 @@ programa {
 		escreva("Melhor aluno: matrícula: ", matriculaMaior, " nota: ", maiorNota)
 	}
 }
+
+/* $$$ Portugol Studio $$$ 
+ * 
+ * Esta seção do arquivo guarda informações do Portugol Studio.
+ * Você pode apagá-la se estiver utilizando outro editor.
+ * 
+ * @POSICAO-CURSOR = 678; 
+ * @PONTOS-DE-PARADA = ;
+ * @SIMBOLOS-INSPECIONADOS = {contador, 4, 10, 8}-{quantidade, 5, 10, 10}-{matricula, 6, 10, 9}-{nota, 7, 10, 4}-{matriculaMaior, 8, 10, 14}-{maiorNota, 8, 30, 9};
+ * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
+ * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
+ */
